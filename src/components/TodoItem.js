@@ -4,7 +4,7 @@ import { deleteTodo } from "../redux/todoSlice";
 
 const TodoItem = ({ todo, text }) => {
   const dispatch = useDispatch();
-  console.log(todo.text);
+
 
   const handleDelete = () => {
     dispatch(deleteTodo({ id: todo.id }));
@@ -12,10 +12,12 @@ const TodoItem = ({ todo, text }) => {
   return (
     <div className="TodoItem">
       <li>
-        <div>{text}</div>
-        <button onClick={handleDelete}>
-          <i className="fa-solid fa-xmark" />
-        </button>
+        <div className="todo">
+        <div>{todo.task}</div>
+        <button className="close-btn" onClick={handleDelete}>
+        <i className="fa-solid fa-xmark" />
+        </button></div>
+        
       </li>
     </div>
   );

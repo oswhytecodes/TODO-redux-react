@@ -1,22 +1,78 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
 
 .App {
-  text-align: center;
-}
 
+}
+header {
+  background-color: rgba(131, 117, 213, 0.939);
+  color: white;
+  padding: 1em 2em;
+  margin-bottom: 2em;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+}
+.AddTodo {
+  display: flex;
+  position: relative;
+  gap: .5em;
+  margin-bottom: 2em;
+}
+input {
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: .5px solid grey;
+}
+.add-btn {
+  position: absolute;
+  /* transform: translate(); */
+  border: none;
+  background-color: transparent;
+  color:rgba(131, 117, 213, 0.939);
+  right: 10px;
+  top: 4px;
+  font-size:1.1em;
+}
+.close-btn {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 1em;
+}
 
 .TodoItem{
+  width: 100%;
   display: flex;
   justify-content: center;
+ 
 }
-
+.todo {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(131, 117, 213, 0.939);
+  padding: 1em 2em;
+  width: 16em;
+  margin-bottom: 1em;
+  gap: 1em;
+}
 li {
   font-size: 1.2em;
-  color: red;
+  color: #fff;
+  list-style: none;
 }

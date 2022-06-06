@@ -5,11 +5,15 @@ import TodoList from "./components/TodoList";
 const App = () => {
   return (
     <div className="App">
-      <h1>My todos</h1>
-      {/* input form  */}
-      <AddTodo />
-      {/* List to hold all the new Todos */}
-      <TodoList />
+      <header>
+        <h1>Another Todo</h1>
+      </header>
+      <section>
+        {/* input form  */}
+        <AddTodo />
+        {/* List to hold all the new Todos */}
+        <TodoList />
+      </section>
     </div>
   );
 };

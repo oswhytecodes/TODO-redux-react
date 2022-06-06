@@ -10,8 +10,8 @@ export const todoSlice = createSlice({
       const newTodo = {
         id: uuidv4(),
         // action.payload will be the value being inputted
-        text: action.payload.value,
-        isComplete: false,
+        task: action.payload.value,
+        isComplete: false
       };
       state.push(newTodo);
     },
