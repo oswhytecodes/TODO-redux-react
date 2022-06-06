@@ -11,6 +11,6 @@
 
 #### Important to note :
 1 There is no local storage functionality 
-2 Just a practice run with React
+
 
 #### For my official [todo App](https://oswhyte-todoapp-react.netlify.app/) 
