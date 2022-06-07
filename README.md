@@ -13,4 +13,4 @@
 1 There is no local storage functionality 
 
 
-#### For my official [todo App](https://oswhyte-todoapp-react.netlify.app/) 
+#### For my official [todo App](https://github.com/oswhyteknits/TodoApp-React) 
